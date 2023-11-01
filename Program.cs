@@ -2,7 +2,7 @@
 
 string[] strArr = new string[4] { "Hello", "2", "world", ":-)" };
 int count = 0;
-int Size (array)
+int Size (string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -14,7 +14,7 @@ int Size (array)
     return count;
 }
 
-string[] Selection(array, arrSelect)
+string[] Selection(string[] array, string[] arrSelect)
 {
      int count = 0;
      for (int i = 0; i < array.Length; i++)
@@ -24,5 +24,14 @@ string[] Selection(array, arrSelect)
             arrSelect[count] = array[i];
             count++;
         }
+    }
+    return arrSelect;
+}
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        System.Console.WriteLine(array[i]);
     }
 }
