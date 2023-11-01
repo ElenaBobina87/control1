@@ -1,9 +1,9 @@
 ﻿using System.Globalization;
 
-string[] strArr = new string[4] { "Hello", "2", "world", ":-)" };
-int count = 0;
+
 int Size (string[] array)
 {
+    int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i].Length <= 3)
@@ -35,3 +35,9 @@ void PrintArray(string[] array)
         System.Console.WriteLine(array[i]);
     }
 }
+
+string[] strArr = new string[4] { "Hello", "2", "world", ":-)" };
+int count = Size(strArr);
+string[] SelectArr = new string[count];
+Selection(strArr, SelectArr);
+PrintArray(SelectArr);
