@@ -11,4 +11,6 @@ int Size (array)
             count++;
         }
     }
+    return count;
 }
+
